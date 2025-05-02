@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The Cedar Nest</title>
+        <meta name="author" content="Allison Marshall">
+        <meta name="description" content="A website for The Cedar Nest, a resort situated in the Swiss Alps.">
+        
+        <link rel="icon" href="images/favicon-16x16.png" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Aladin&family=Nanum+Myeongjo&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles.obs.css">
+    </head>
+
+    <body>
+        <header>
+            <a href="#" aria-label="Go to The Cedar Nest homepage">
+            </a>
+            <h1>The Cedar Nest</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Accommodations</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="form">
+                <div class="contact">
+                    <h2>Contact Us</h2>
+                    <p>
+                        Please reach out to us with any questions or concerns.<br>
+                        We are happy to help you plan your dream vacation with us!<br>
+                        Required fields marked with a <span class="required">*</span>
+                      </p>
+                        <img src="images/swiss-peak.jpg" alt="Mountain peak in center with trees surrounding the edge, a river running through the middle.">
+                </div>
+                <div class="formcontent">
+                    <form action="https://wp.zybooks.com/form-viewer.php" method="POST" target="_blank">
+                        <label for="my-name">Full Name<span class="required">*</span></label>
+                        <input type="text" name="my-name" id="my-name" required>
+                        <label for="my-email">Email<span class="required">*</span></label>
+                        <input type="email" name="my-email" id="my-email" required>
+                        <label for="my-phone">Phone</label>
+                        <input type="tel" name="my-phone" id="my-phone">
+                        <fieldset>
+                            <legend>Preferred Method of Contact</legend>
+                            <div class="radio-option">
+                                <input type="radio" name="contact-pref" id="pref-email" checked>
+                                <label for="pref-email">Email</label>
+                            </div>
+                            <div class="radio-option">
+                                <input type="radio" name="contact-pref" id="pref-phone">
+                                <label for="pref-phone">Phone</label>
+                            </div>
+                        </fieldset>
+                        <label for="my-comments">Comments</label>
+                        <textarea name="my-comments" id="my-comments"></textarea>
+
+                        <input type="submit" name="my-submit" id="my-submit" value="Submit Form">
+                    </form>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer>
+            <p>Copyright ©2025 - The Cedar Nest</p>
+            <p>This site is for educational purposes only</p>
+        </footer>
+    </body>
